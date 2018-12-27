@@ -57,7 +57,7 @@ const key = 'your-private-posting-key-here'; // Put your private posting key her
 Now we need to actually create our interface with the Steem blockchain. Like others like `web3` (for Ethereum), Steem uses the `dsteem` package to interface with the Steem blockchain. We'll provide this with a node to connect to (similar to how Infura works on Ethereum) and to get the blockchain data from:
 
 ```
-var client = new steem.Client('https://api.steemit.com'); // One good node to use. You can find a good list at https://developers.steem.io/quickstart/#quickstart-steemd-nodes
+var client = new steem.Client('COMING'); // One good node to use. 
 ```
 Then we'll get the latest block to use as where we'll start processing blocks and transactions from:
 
