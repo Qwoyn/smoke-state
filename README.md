@@ -26,7 +26,7 @@ Anything that a smart contract can do can be done with soft-consensus, and soft-
 #### steem-state
 `steem-state` is a framework for building fully decentralized DApps using soft-consensus with the Steem blockchain. Using `steem-state` you can define events that occur when a new transaction of a certain type is created, such as updating the state, displaying feedback for the user, etc. Using these events, you can build a fully decentralized DApp. Look below for an example tutorial.
 
-#### smoke-state is steem stakes clone on the Smoke Blockchain
+#### smoke-state is a steem-stake clone on the Smoke Blockchain
 
 ## Example
 The following example will create a decentralized messaging app on the Steem blockchain with a CLI using only 28 lines of code! With your final result you will be able to send messages to a public chatroom through the Steem blockchain. First, install the dependencies we'll need and set up the project:
