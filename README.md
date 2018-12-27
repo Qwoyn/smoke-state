@@ -138,7 +138,7 @@ var key = 'your_private_posting_key_goes_here';
 
 
 
-var client = new steem.Client('https://api.steemit.com');
+var client = new steem.Client('https://api.smoke.io');
 client.database.getDynamicGlobalProperties().then(function(result) {
   var processor = steemState(client, steem, result.head_block_number, 100, 'basic_messaging_app_');
   processor.on('message', function(json, from) {
