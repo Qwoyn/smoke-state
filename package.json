@@ -1,15 +1,18 @@
 {
-  "name": "steem-state",
-  "version": "1.2.0",
-  "description": "A framework for developing soft-consenusus decentralized applications on the Steem blockchain.",
+  "name": "smoke-state",
+  "version": "0.1.0",
+  "description": "A framework for developing soft-consenusus decentralized applications on the Stmoke blockchain.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "nicholas2519@gmail.com",
+  "author": "daniel.pittman@qwoyn.io",
   "license": "MIT",
-  "repository":"https://github.com/nicholas-2/steem-state",
-  "homepage":"https://github.com/nicholas-2/steem-state",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Qwoyn/smoke-state.git"
+  },
+  "homepage": "https://qwoyn.io",
   "keywords": [
     "blockchain",
     "cryptocurrency",
@@ -17,7 +20,10 @@
     "dapps",
     "decentralization",
     "dsteem",
-    "steem",
-    "steemit"
-  ]
+    "smoke",
+    "steem"
+  ],
+  "bugs": {
+    "url": "https://github.com/Qwoyn/smoke-state/issues"
+  }
 }
