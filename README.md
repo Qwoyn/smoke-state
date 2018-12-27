@@ -35,7 +35,7 @@ The following example will create a decentralized messaging app on the smoke blo
 mkdir basic-messaging-app
 cd basic-messaging-app
 npm init
-npm install smoke-state smoke-transact dsmoke
+npm install smoke-state smoke-transact dsteem
 ```
 
 Then create index.js and we can start building! First we'll import our dependencies:
@@ -57,7 +57,7 @@ Then we will create some variables for our username and private key on the smoke
 const username = 'ned'; // Put your username here (without the @ sign).
 const key = 'your-private-posting-key-here'; // Put your private posting key here.
 ```
-Now we need to actually create our interface with the smoke blockchain. Like others like `web3` (for Ethereum), smoke uses the `dsmoke` package to interface with the smoke blockchain. We'll provide this with a node to connect to (similar to how Infura works on Ethereum) and to get the blockchain data from:
+Now we need to actually create our interface with the smoke blockchain. Like others like `web3` (for Ethereum), smoke uses the `dsteem` package to interface with the smoke blockchain. We'll provide this with a node to connect to (similar to how Infura works on Ethereum) and to get the blockchain data from:
 
 ```
 var client = new steem.Client('https://api.smoke.io'); // One good node to use. 
@@ -69,9 +69,9 @@ client.database.getDynamicGlobalProperties().then(function(result) {
 ```
 Then actually create the smoke-state instance. This method uses the arguments:
 
-`client`: the dsmoke client to get transactions from,
+`client`: the dsteem client to get transactions from,
 
-`smoke`: a dsmoke instance,
+`smoke`: a dsteem instance,
 
 `startingBlock`: which block to start at when processing blocks and transactions,
 
