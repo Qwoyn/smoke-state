@@ -4,7 +4,7 @@
 
 ## Installation
 `npm install smoke-state`
-and to use the companion project, `smoke-transact`,
+and to use the companion project, [`smoke-transact`](https://github.com/Qwoyn/smoke-transact),
 `npm install smoke-transact`
 
 ## Explanation
@@ -26,7 +26,7 @@ Anything that a smart contract can do can be done with soft-consensus, and soft-
 #### smoke-state
 `smoke-state` is a framework for building fully decentralized DApps using soft-consensus with the smoke blockchain. Using `smoke-state` you can define events that occur when a new transaction of a certain type is created, such as updating the state, displaying feedback for the user, etc. Using these events, you can build a fully decentralized DApp. Look below for an example tutorial.
 
-#### smoke-state is a smoke-stake clone on the Smoke Blockchain
+#### smoke-state is a steem-stake clone on the Smoke Blockchain
 
 ## Example
 The following example will create a decentralized messaging app on the smoke blockchain with a CLI using only 28 lines of code! With your final result you will be able to send messages to a public chatroom through the smoke blockchain. First, install the dependencies we'll need and set up the project:
@@ -40,7 +40,7 @@ npm install smoke-state smoke-transact dsmoke
 
 Then create index.js and we can start building! First we'll import our dependencies:
 ```
-var smoke = require('dsmoke'); // This is our interface to the smoke blockchain.
+var steem = require('dsteem'); // This is our interface to the smoke blockchain.
 var smokeState = require('smoke-state'); // This will allow us to build our DApp.
 var smokeTransact = require('smoke-transact'); // This makes it easy to make transactions on the smoke blockchain.
 var readline = require('readline'); // For the CLI (command line interface).
@@ -60,7 +60,7 @@ const key = 'your-private-posting-key-here'; // Put your private posting key her
 Now we need to actually create our interface with the smoke blockchain. Like others like `web3` (for Ethereum), smoke uses the `dsmoke` package to interface with the smoke blockchain. We'll provide this with a node to connect to (similar to how Infura works on Ethereum) and to get the blockchain data from:
 
 ```
-var client = new smoke.Client('https://api.smoke.io'); // One good node to use. 
+var client = new steem.Client('https://api.smoke.io'); // One good node to use. 
 ```
 Then we'll get the latest block to use as where we'll start processing blocks and transactions from:
 
