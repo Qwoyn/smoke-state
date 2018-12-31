@@ -1,4 +1,4 @@
-# smoke-state (Based on smoke-state)
+# smoke-state (Based on steem-state)
 
 ### Build decentralized apps on the Smoke blockchain with ease!
 
